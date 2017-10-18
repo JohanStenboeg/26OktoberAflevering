@@ -1,9 +1,9 @@
 package StenboegJohan;
 /*
-Program funtion:
+Program function:
 Making a system with different classes and different methods to show what i've learn since i started.
 Author: Johan Stenbøg
-Reason: Homework during education.
+Reason: Test during education.
 Due date: 26/10 2017
 Country: Denmark
  */
@@ -43,6 +43,14 @@ public class Studerende {
         this.name = name;
         this.gender = gender;
         System.out.println("New student added named: " + name + " and it is a " + gender);
+    }
+    public Studerende(String name, int age, String gender, String eyeColor, double height){
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.eyeColor = eyeColor;
+        this.height = height;
+        System.out.println("New student added named: " + name + " aged: " + age + " with eyecolor: " + eyeColor + " and with height: " + height + ". -" + gender );
     }
 
     //Opretter en getter funktion så man kan hente navnet.
