@@ -10,31 +10,16 @@ Program funtion:
 
 
 public class DatHoldet {
+    //Her oprettes objekterne, der bliver oprettet ud fra de 3 forskellige constructorere, der er lavet i Studerende.java klassen.
+    //Her kunne man tilføje alle på hele årgangen, men har valgt kun at tilføje 3.
 
     //Opretter et objekt ud fra constructor1.
-    Studerende stud1 = new Studerende("Johan");
+    Studerende johan = new Studerende("Johan");
 
     //Opretter et objekt ud fra constructor2.
-    Studerende stud2 = new Studerende("Lisa", "Female");
+    Studerende lisa = new Studerende("Lisa", "Green");
 
     //Opretter et objekt ud fra constructor3.
-    Studerende stud3 = new Studerende("Mikkel", 18);
+    Studerende mikkel = new Studerende("Mikkel", 18);
 
-    
-
-/*
-    //Så kan jeg kalde på de forskellige setter metoder, for at give objecterne flere ting.
-    //fx øjenfarve
-        stud1.setEyeColor("Blå");
-        stud1.setAge(18);
-        stud1.setHeight(1.8);
-        stud1.setGender("Male");
-
-        System.out.println(stud1.getAge() + " " + stud1.getEyeColor() + " " + stud1.getName() + " " + stud1.getHeight() + " " + stud1.getGender());
-
-        System.out.println(stud2.getGender());
-
-        stud3.setGender("Male");
-
-        System.out.println(stud3.getAge() + " " + stud3.getGender());*/
 }

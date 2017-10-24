@@ -8,43 +8,39 @@ Program funtion:
         Country: Denmark
         */
 
-import StenboegJohan.Studerende.*;
-import StenboegJohan.DatHoldet.*;
-
 public class Start {
     public static void main(String[] args) {
-        System.out.println("Hello world");
 
-        DatHoldet studerende = new DatHoldet();
-        System.out.println(studerende);
-        /*
-        //Tester systemet faktisk kan køre.
-        System.out.println("Hello world");
+        //Opretter et nyt object fra dataholdet.
+        DatHoldet dat17 = new DatHoldet();
+        MineMetoder metoder = new MineMetoder();
 
-        //Opretter et objekt ud fra constructor1.
-        Studerende stud1 = new Studerende("Johan");
+        //Så kan man hente objekterne fra de forskellige klasser.
+        System.out.println("Den studerende hedder: " + dat17.johan.getName());
 
-        //Opretter et objekt ud fra constructor2.
-        Studerende stud2 = new Studerende("Lise", "Female");
+        //Henter setter metoden fra studerende klassen og sætter højden af et studerende objekt. Hvilket her er den studerende lisa.
+        dat17.lisa.setHeight(162);
+        dat17.lisa.setGender("Female"); //En sætter, der setter køn.
+        System.out.println(dat17.lisa.getName() + "(" + dat17.lisa.getGender() + ") er " + dat17.lisa.getHeight() + " cm høj."); //Printer alle de værdier man har sat koblet til objektet.
 
-        //Opretter et objekt ud fra constructor3.
-        Studerende stud3 = new Studerende("Mikkel", 18);
+        //Sætter nogle forskellige værdier til objektet Mikkel.
+        dat17.mikkel.setEyeColor("Blå");
+        dat17.mikkel.setAge(85);
+        dat17.mikkel.setGender("Male");
+        dat17.mikkel.setHeight(20);
+        //Printer værdierne ud.
+        System.out.println(dat17.mikkel.getName() + "(" + dat17.mikkel.getGender() + ") er " + dat17.mikkel.getHeight() + "cm høj. " + dat17.mikkel.getName() + " er " + dat17.mikkel.getAge() + " år gammel og har øjenfarven: " + dat17.mikkel.getEyeColor());
 
+        //Henter metoderne fra MineMetoder klassen.
+        metoder.get5NUmbers();
 
-        //Så kan jeg kalde på de forskellige setter metoder, for at give objecterne flere ting.
-        //fx øjenfarve
-        stud1.setEyeColor("Blå");
-        stud1.setAge(18);
-        stud1.setHeight(1.8);
-        stud1.setGender("Male");
+        metoder.getCommentFromUser();
 
-        System.out.println(stud1.getAge() + " " + stud1.getEyeColor() + " " + stud1.getName() + " " + stud1.getHeight() + " " + stud1.getGender());
+        metoder.getCounterTo15();
 
-        System.out.println(stud2.getGender());
+        metoder.getCurrentTime();
 
-        stud3.setGender("Male");
-
-        System.out.println(stud3.getAge() + " " + stud3.getGender());
-        */
+        metoder.getRandomNumber();
     }
 }
+
