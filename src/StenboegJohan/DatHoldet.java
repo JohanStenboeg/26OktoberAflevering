@@ -22,4 +22,7 @@ public class DatHoldet {
     //Opretter et objekt ud fra constructor3.
     Studerende mikkel = new Studerende("Mikkel", 18);
 
+    //Opretter et objekt ud fra constructor4.
+    Studerende lasse = new Studerende("Lasse", 27, "Male", "Blue", 175);
+
 }

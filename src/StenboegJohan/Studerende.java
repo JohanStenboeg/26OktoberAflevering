@@ -53,7 +53,7 @@ public class Studerende {
         this.gender = gender;
         this.eyeColor = eyeColor;
         this.height = height;
-        System.out.println("New student added named: " + name + " aged: " + age + " with eyecolor: " + eyeColor + " and with height: " + height + ". -" + gender );
+        System.out.println("New student added named: " + name + " aged: " + age + " with eyecolor: " + eyeColor + " and with height: " + height + ". " + gender );
     }
 
     //Opretter en getter funktion så man kan hente navnet.
